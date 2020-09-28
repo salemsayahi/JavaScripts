@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- En-tête de la page -->
+
+    <title>Titre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <footer>
+        <nav class="nav justify-content-center">
+            <!-- alignement centre -->
+            <a class="nav-link active" href="#">Accueil</a>
+            <a class="nav-link" href="#">A propos</a>
+            <a class="nav-link" href="#">Produits</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">
+                <div class="container">
+                    <img src="panier.png" alt="Snow" style="width:25%;">
+                    <div class="centered">0</div>
+                </div>
+            </a>
+        </nav>
+
+    </footer>
+    
+    <table style="width:50%" class="center" id="panier">
+        <tr bgcolor="#0000FF">
+            <th width=50%>Prduit</th>
+            <th width=15%>Prix unitaire</th>
+            <th width=15%>Quantité</th>
+            <th width=15%>Total</th>
+            <th width=5%></th>
+        </tr>
+        <tr>
+            <td>>Prduit test Numéro 1</td>
+            <td id="pu1">112.450</td>
+            <td class="d-flex justify-content-between">
+                <button type="button" id="1" class="btn btn-outline-success" onClick="Ajout1()">+</button>
+                <h3 id="qt1">0</h3>
+                <button type="button" class="btn btn-outline-danger" onClick="Supprimer1()">-</button>
+            </td>
+            <td id="t1"></td>
+            <td><img src="corbeille.png" alt="Snow" style="width:100%;"></td>
+        </tr>
+        <tr>
+            <td>>Prduit test Numéro 1</td>
+            <td id="pu2">9.500</td>
+            <td class="d-flex justify-content-between">
+                <button type="button" id="2" class="btn btn-outline-success" onClick="Ajout2()">+</button>
+                <h3 id="qt2">0</h3>
+                <button type="button" class="btn btn-outline-danger" onClick="Supprimer2()">-</button>
+            </td>
+            <td id="t2"></td>
+            <td><img src="corbeille.png" alt="Snow" style="width:100%;"></td>
+        </tr>
+        <tr>
+            <td>>Prduit test Numéro 1</td>
+            <td id="pu3">135.000</td>
+            <td class="d-flex justify-content-between">
+                <button type="button" id="3" class="btn btn-outline-success" onClick="Ajout3()">+</button>
+                <h3 id="qt3">0</h3>
+                <button type="button" class="btn btn-outline-danger" onClick="Supprimer3()">-</button>
+            </td>
+            <td id="t3"></td>
+            <td><img src="corbeille.png" alt="Snow" style="width:100%;"></td>
+        </tr>
+        <tr>
+            <td>>Prduit test Numéro 1</td>
+            <td id="pu4">12.450</td>
+            <td class="d-flex justify-content-between">
+                <button type="button" id="4" class="btn btn-outline-success" onClick="Ajout4()">+</button>
+                <h3 id="qt4">0</h3>
+                <button type="button" class="btn btn-outline-danger" onClick="Supprimer4()">-</button>
+            </td>
+            <td id="t4"></td>
+            <td><img src="corbeille.png" alt="Snow" style="width:100%;"></td>
+        </tr>
+        <tr>
+            <td COLSPAN="2">
+                <h2> Total </h2>
+            </td>
+            <td COLSPAN="3">
+                <h2 id="ST"> 0 </h2>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

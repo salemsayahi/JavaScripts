@@ -1,0 +1,28 @@
+.active{
+    color: orange;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      th { color:white; 
+     text-align: center;}
+
+     .container {
+        position: relative;
+        text-align: center;
+        color:red;
+      }
+     .centered {
+        position: absolute;
+        top: 24%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+      }
+    
