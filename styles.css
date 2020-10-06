@@ -1,28 +1,63 @@
-.active{
-    color: orange;
+.active {
+  color: orange;
 }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  display: none;
+}
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 
-    .center {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      th { color:white; 
-     text-align: center;}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-     .container {
-        position: relative;
-        text-align: center;
-        color:red;
-      }
-     .centered {
-        position: absolute;
-        top: 24%;
-        left: 58%;
-        transform: translate(-50%, -50%);
-      }
-    
+th {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: red;
+}
+.centered {
+  position: absolute;
+  top: 24%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+.produit {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 400px 400px 400px;
+  justify-content: center;
+}
+.subproduit {
+  width: 300px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.like {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  flex-direction: vertical;
+  align-items: center;
+  justify-content: center;
+}
+.cmd {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transform: translate(20%, -500%);
+}
